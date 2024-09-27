@@ -1,4 +1,4 @@
-# Red Hat OpenShift basic Monitoring Script
+# My OCP basic Monitoring Script
 
 This script focus on verifying the cluster operator(co) and nodes health status
 
