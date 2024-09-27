@@ -1,0 +1,48 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: basic-cluster-monitoring
+rules:
+  - verbs:
+      - get
+      - watch
+      - list
+    apiGroups:
+      - config.openshift.io
+    resources:
+      - clusteroperators
+  - verbs:
+      - get
+      - watch
+      - list
+    apiGroups:
+      - config.openshift.io
+    resources:
+      - clusterversions
+  - verbs:
+      - get
+      - watch
+      - list
+    apiGroups:
+      - ''
+    resources:
+      - nodes
+  - verbs:
+      - get
+      - list
+      - watch
+    apiGroups:
+      - metrics.k8s.io
+    resources:
+      - pods
+      - nodes
+  - verbs:
+      - get
+      - list
+      - watch
+    apiGroups:
+      - ''
+    resources:
+      - componentstatuses
+      - nodes
+      - nodes/status
