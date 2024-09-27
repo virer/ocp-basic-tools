@@ -1,4 +1,4 @@
-# My OCP basic Monitoring Script
+# My OCP basic monitoring Script
 
 This script focus on verifying the cluster operator(co) and nodes health status
 
